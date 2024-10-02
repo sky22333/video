@@ -126,7 +126,7 @@ html {
   
   .card-front form .apis {
     width: 100%;
-    line-height: 30px;
+    line-height: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
