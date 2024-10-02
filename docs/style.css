@@ -5,14 +5,14 @@ html {
   }
   
   :root {
-    --link-color: #ffb5af;
-    --theme-color: #9f9ba3;
-    --shadow-right-bottom-color: #d99a95;
-    --shadow-left-top-color: #ffd0c9;
+    --link-color: #1a1110;
+    --theme-color: #eceaec;
+    --shadow-right-bottom-color: #28202e;
+    --shadow-left-top-color: #5f4e60;
     --input-left-top-color: #d9d9d9;
     --input-right-bottom-color: #ffffff;
   
-    --return-button-color: #ffb5af;
+    --return-button-color: #a45252;
   }
   
   a {
