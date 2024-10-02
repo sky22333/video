@@ -137,6 +137,7 @@ html {
     width: 40%;
     line-height: 30px;
     align-self: flex-end;
+    margin: 0 auto; /* 按钮水平居中 */
     outline: none;
     border: 0;
     border-radius: 25px;
