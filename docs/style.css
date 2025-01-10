@@ -101,10 +101,10 @@ html {
   
   .card-front form {
     flex: 1;
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   
@@ -126,24 +126,21 @@ html {
   
   .card-front form .apis {
     width: 100%;
-    line-height: 15px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: var(--shadow-right-bottom-color);
+    display: grid; /* 使用网格布局 */
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* 自适应列数 */
+    gap: 10px; /* 增加间距 */
   }
   
   .card-front form .play {
-    width: 40%;
+    width: 60%; /* 增加按钮宽度 */
     line-height: 30px;
-    align-self: flex-end;
-    margin: 0 auto; /* 按钮水平居中 */
+    align-self: center; /* 居中对齐 */
+    margin: 20px 0; /* 增加上下间距 */
     outline: none;
     border: 0;
     border-radius: 25px;
     background: linear-gradient(145deg, #838383, #6e6e6e);
-    box-shadow:  2px 2px 8px #686868, 
-                  -2px -2px 8px #8c8c8c;
+    box-shadow: 2px 2px 8px #686868, -2px -2px 8px #8c8c8c;
     color: #fff;
     font-size: 14px;
     cursor: pointer;
