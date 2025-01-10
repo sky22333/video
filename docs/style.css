@@ -37,8 +37,8 @@ html {
   .card {
     position: relative;
     transform-style: preserve-3d;
-    width: 300px;
-    height: 450px;
+    width: 350px;
+    height: 600px;
     border-radius: 30px;
     box-shadow:  20px 20px 60px var(--shadow-right-bottom-color), 
                 -20px -20px 60px var(--shadow-left-top-color);
@@ -111,10 +111,10 @@ html {
   .card-front form #media-url {
     line-height: 30px;
     outline: none;
-    padding-left: 20px;
+    padding-left: 60px;
     border: 0;
-    border-radius: 25px;
-    font-size: 12px;
+    border-radius: 20px;
+    font-size: 15px;
     box-sizing: border-box;
     box-shadow: inset 2px 2px 4px var(--input-left-top-color), 
                 inset -2px -2px 4px var(--input-right-bottom-color);
