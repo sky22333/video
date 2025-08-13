@@ -1,0 +1,26 @@
+{
+  "name": "video-parser-player",
+  "version": "1.0.0",
+  "description": "视频在线解析播放",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite"
+  },
+  "dependencies": {
+    "@fluentui/react-components": "^9.54.0",
+    "@fluentui/react-icons": "^2.0.258",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "terser": "^5.43.1",
+    "vite": "^5.4.1"
+  }
+}

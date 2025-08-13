@@ -1,0 +1,297 @@
+/* 全局样式 */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.app.light {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.app.dark {
+  background: linear-gradient(135deg, #1e1e1e 0%, #2d2d30 100%);
+}
+
+/* 主题切换按钮 */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* 播放页面的主题按钮 */
+.player-container .theme-toggle {
+  z-index: 1001;
+}
+
+/* 首页容器 */
+.home-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: calc(100vh - 80px);
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* 标题区域 */
+.title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.app-title {
+  margin: 0;
+}
+
+.app-subtitle {
+  opacity: 0.8;
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
+
+/* 表单容器 */
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.app.dark .form-container {
+  background: rgba(45, 45, 48, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input-group,
+.dropdown-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* URL输入框 */
+.url-input {
+  width: 100%;
+}
+
+/* API下拉选择器 */
+.api-dropdown {
+  width: 100%;
+  min-width: 200px;
+}
+
+/* 播放按钮 */
+.play-button {
+  min-width: 160px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* 播放器容器 */
+.player-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-height: calc(100vh - 80px);
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* 页脚 */
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+/* 历史记录样式 */
+.input-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.app.dark .history-list {
+  background: rgba(45, 45, 48, 0.9);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.history-item {
+  padding: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.history-item:hover {
+  background: rgba(0, 120, 212, 0.1);
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-url {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px 15px;
+  }
+  
+  .home-content {
+    gap: 30px;
+  }
+  
+  .form-container {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+  
+  .theme-toggle {
+    top: auto;
+    bottom: 20px;
+    right: 15px;
+  }
+  
+  .player-container {
+    padding: 15px;
+  }
+  
+  .history-item {
+    padding: 10px;
+  }
+  
+  .history-url {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 15px 10px;
+  }
+  
+  .form-container {
+    padding: 20px 15px;
+  }
+  
+  .play-button {
+    min-width: 140px;
+    height: 40px;
+    font-size: 15px;
+  }
+  
+  .theme-toggle {
+    top: auto;
+    bottom: 15px;
+    right: 10px;
+  }
+  
+  .input-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .history-list {
+    max-height: 150px;
+  }
+  
+  .history-item {
+    padding: 8px;
+  }
+  
+  .history-meta {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+/* 动画效果 */
+.form-container {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 消息栏样式 */
+.fui-MessageBar {
+  border-radius: 12px;
+  margin: 15px 0;
+}

@@ -1,0 +1,44 @@
+{
+  "apis": [
+    {
+      "id": "api1",
+      "name": "解析接口一",
+      "url": "https://jx.xmflv.com/?url="
+    },
+    {
+      "id": "api2",
+      "name": "解析接口二",
+      "url": "https://jx.77flv.cc/?url="
+    },
+    {
+      "id": "api3",
+      "name": "解析接口三",
+      "url": "https://www.ckplayer.vip/jiexi/?url="
+    },
+    {
+      "id": "api4",
+      "name": "解析接口四",
+      "url": "https://jx.playerjy.com/?url="
+    },
+    {
+      "id": "api5",
+      "name": "解析接口五",
+      "url": "https://www.8090g.cn/?url="
+    },
+    {
+      "id": "api6",
+      "name": "解析接口六",
+      "url": "https://www.pouyun.com/?url="
+    },
+    {
+      "id": "api7",
+      "name": "解析接口七",
+      "url": "https://jx.mmkv.cn/tv.php?url="
+    },
+    {
+      "id": "api8",
+      "name": "解析接口八",
+      "url": "https://www.yemu.xyz/?url="
+    }
+  ]
+}
