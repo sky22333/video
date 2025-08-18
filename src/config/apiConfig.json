@@ -39,6 +39,21 @@
       "id": "api8",
       "name": "解析接口八",
       "url": "https://www.yemu.xyz/?url="
+    },
+    {
+      "id": "api9",
+      "name": "解析接口九",
+      "url": "https://jx.2s0.cn/player/?url="
+    },
+    {
+      "id": "api10",
+      "name": "解析接口十",
+      "url": "https://jx.nnxv.cn/tv.php?url="
+    },
+    {
+      "id": "api11",
+      "name": "解析接口十一",
+      "url": "https://jx.789jiexi.com/?url="
     }
   ]
 }
