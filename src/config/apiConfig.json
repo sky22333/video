@@ -48,11 +48,6 @@
     {
       "id": "api10",
       "name": "解析接口十",
-      "url": "https://jx.nnxv.cn/tv.php?url="
-    },
-    {
-      "id": "api11",
-      "name": "解析接口十一",
       "url": "https://jx.789jiexi.com/?url="
     }
   ]
